@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coming soon</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/app.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <div id="root"></div>
+        <div class="row top">
+            <div class="col-md-7 col-sm">
+                <div class="row">
+                    <span class="coming-soon">СКОРО МЫ ПРЕДСТАВИМ <br> ВАМ ОБНОВЛЕННЫЙ <br> ПРОЕКТ</span>
+                    <img class="top-image" src="img/i'Lerney.png" alt="i'Lerney"><br>
+                </div>
+                <div class="row">
+                    <span class="description">
+                        Мультиязычный информационно-обучающий ресурс. <br>
+                        Как инвестировать и сохранять. Тратить и зарабатывать.
+                    </span><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row describe">
+            <div class="col-md-7">
+                <img src="img/Icon_smlArrow.png">
+                На русском и английских языках <br>
+                <img src="img/Icon_smlArrow.png">
+                Вебинары и блоги <br>
+                <img src="img/Icon_smlArrow.png">
+                Аналитика в режиме реального времени <br>
+                <span class="and-more">И МНОГОЕ ДРУГОЕ УЖЕ СОВСЕМ СКОРО!</span> <br>
+            </div>
+        </div>
+
+        <div class="row footer">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-3">
+                        Оставьте свою почту <br> и узнайте первыми <br> о зпуске проекта <br>
+                    </div>
+                    <div class="col-md-3">
+                        <img align="right" class="bottom-image" src="img/i'Lerney.png" alt="i'Lerney">
+                    </div>
+                </div>
+                <div class="row form">
+                    <form>
+                        <div class="col-md-6">
+                            <input type="email">
+                        </div>
+                    </form>
+                        <div class="col-md-4">
+                            <button id="myBtn" class="subscribe-button">
+                                <span class="subscribe-button-text">Узнать первым</span>
+                            </button>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!--<span class="close">×</span>-->
+            <div class="row">
+                <img class="close" src="img/close-btn.png" alt="Закрыть">
+            </div>
+            <div class="row">
+                <img align="center" src="img/photo.png"> <br><br>
+                <p style="align-content: center;">
+                    СПАСИБО, Я ПЕРЕЗВОНЮ ВАМ <br> КАК ТОЛЬКО МЫ ЗАПУСТИМ <br> НАШ НОВЫЙ <br>
+                    <img src="img/i'Lerney.png" alt="i'Lerney"><br><br>
+                    <span class="signature">С уважением,<br> Валентина Дрофа</span>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        };
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        };
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
